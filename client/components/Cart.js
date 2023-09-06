@@ -51,7 +51,7 @@ function Cart({
   if (isLoggedIn) {
     cart && cart.length === 0
       ? (rowView = (
-          <h1 style={{ textAlign: "center" }}>Cart is Empty, ya bum!</h1>
+          <h1 style={{ textAlign: "center" }}>Cart is Empty!</h1>
         ))
       : (rowView =
           cart &&
@@ -72,7 +72,7 @@ function Cart({
   } else {
     rowView =
       guestCart.length === 0 ? (
-        <h1 style={{ textAlign: "center" }}>Cart is Empty, ya bum!</h1>
+        <h1 style={{ textAlign: "center" }}>Cart is Empty!</h1>
       ) : (
         guestCart.map((item) => (
           <CartRow
